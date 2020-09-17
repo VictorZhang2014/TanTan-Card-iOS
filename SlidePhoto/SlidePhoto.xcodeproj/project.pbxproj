@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B30B4EA8F342C8ADD3884B8 /* Pods_SlidePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1542E1337B9696ABC65D0B8 /* Pods_SlidePhoto.framework */; };
+		90493142250471D60079ADB6 /* SPSlidePhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90493141250471D60079ADB6 /* SPSlidePhotoViewer.m */; };
+		90493144250475DE0079ADB6 /* SPMainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90493143250475DE0079ADB6 /* SPMainCardViewController.swift */; };
+		90493148250488CB0079ADB6 /* SPImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 90493147250488CB0079ADB6 /* SPImageDownloader.m */; };
+		9049314B2504893B0079ADB6 /* UIImageView+DownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9049314A2504893B0079ADB6 /* UIImageView+DownloadCache.m */; };
+		90873B28250370D6002D1468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B27250370D6002D1468 /* AppDelegate.m */; };
+		90873B2B250370D6002D1468 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B2A250370D6002D1468 /* SceneDelegate.m */; };
+		90873B31250370D6002D1468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90873B2F250370D6002D1468 /* Main.storyboard */; };
+		90873B33250370DB002D1468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90873B32250370DB002D1468 /* Assets.xcassets */; };
+		90873B36250370DB002D1468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90873B34250370DB002D1468 /* LaunchScreen.storyboard */; };
+		90873B39250370DB002D1468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B38250370DB002D1468 /* main.m */; };
+		90873B4825037AB6002D1468 /* SPSlidePhotoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90873B4725037AB6002D1468 /* SPSlidePhotoItemView.swift */; };
+		90873B4D25037B18002D1468 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B4C25037B18002D1468 /* SPBaseViewController.m */; };
+		90873B5025037E89002D1468 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90873B4F25037E89002D1468 /* UIColor+Ext.swift */; };
+		90873B53250384CC002D1468 /* SPHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B52250384CC002D1468 /* SPHttpManager.m */; };
+		90873B5525038985002D1468 /* SPImageCardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90873B5425038985002D1468 /* SPImageCardDataModel.swift */; };
+		90873B5825038DE5002D1468 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 90873B5725038DE5002D1468 /* NSString+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1396BD646049CCEDA4ABFA98 /* Pods-SlidePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlidePhoto.debug.xcconfig"; path = "Target Support Files/Pods-SlidePhoto/Pods-SlidePhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		239291D07C37D63BACD97884 /* Pods-SlidePhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlidePhoto.release.xcconfig"; path = "Target Support Files/Pods-SlidePhoto/Pods-SlidePhoto.release.xcconfig"; sourceTree = "<group>"; };
+		90493140250471D60079ADB6 /* SPSlidePhotoViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSlidePhotoViewer.h; sourceTree = "<group>"; };
+		90493141250471D60079ADB6 /* SPSlidePhotoViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSlidePhotoViewer.m; sourceTree = "<group>"; };
+		90493143250475DE0079ADB6 /* SPMainCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMainCardViewController.swift; sourceTree = "<group>"; };
+		90493146250488CB0079ADB6 /* SPImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPImageDownloader.h; sourceTree = "<group>"; };
+		90493147250488CB0079ADB6 /* SPImageDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPImageDownloader.m; sourceTree = "<group>"; };
+		904931492504893B0079ADB6 /* UIImageView+DownloadCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DownloadCache.h"; sourceTree = "<group>"; };
+		9049314A2504893B0079ADB6 /* UIImageView+DownloadCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DownloadCache.m"; sourceTree = "<group>"; };
+		90873B23250370D5002D1468 /* SlidePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90873B26250370D5002D1468 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90873B27250370D6002D1468 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90873B29250370D6002D1468 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		90873B2A250370D6002D1468 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		90873B30250370D6002D1468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90873B32250370DB002D1468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90873B35250370DB002D1468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90873B37250370DB002D1468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90873B38250370DB002D1468 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90873B4625037AB6002D1468 /* SlidePhoto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlidePhoto-Bridging-Header.h"; sourceTree = "<group>"; };
+		90873B4725037AB6002D1468 /* SPSlidePhotoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSlidePhotoItemView.swift; sourceTree = "<group>"; };
+		90873B4B25037B18002D1468 /* SPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBaseViewController.h; sourceTree = "<group>"; };
+		90873B4C25037B18002D1468 /* SPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBaseViewController.m; sourceTree = "<group>"; };
+		90873B4F25037E89002D1468 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		90873B51250384CC002D1468 /* SPHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPHttpManager.h; sourceTree = "<group>"; };
+		90873B52250384CC002D1468 /* SPHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPHttpManager.m; sourceTree = "<group>"; };
+		90873B5425038985002D1468 /* SPImageCardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImageCardDataModel.swift; sourceTree = "<group>"; };
+		90873B5625038DE5002D1468 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		90873B5725038DE5002D1468 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		F1542E1337B9696ABC65D0B8 /* Pods_SlidePhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlidePhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90873B20250370D5002D1468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B30B4EA8F342C8ADD3884B8 /* Pods_SlidePhoto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90493145250488AF0079ADB6 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				90493146250488CB0079ADB6 /* SPImageDownloader.h */,
+				90493147250488CB0079ADB6 /* SPImageDownloader.m */,
+				904931492504893B0079ADB6 /* UIImageView+DownloadCache.h */,
+				9049314A2504893B0079ADB6 /* UIImageView+DownloadCache.m */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		90873B1A250370D5002D1468 = {
+			isa = PBXGroup;
+			children = (
+				90873B25250370D5002D1468 /* SlidePhoto */,
+				90873B24250370D5002D1468 /* Products */,
+				9EAD4B2BC79DEEE7A9881895 /* Pods */,
+				BC12F5F56C551095985D1E19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		90873B24250370D5002D1468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90873B23250370D5002D1468 /* SlidePhoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90873B25250370D5002D1468 /* SlidePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				90873B41250370F8002D1468 /* Main */,
+				90873B40250370EE002D1468 /* Utilities */,
+				90873B3F250370E8002D1468 /* Network */,
+				90873B4B25037B18002D1468 /* SPBaseViewController.h */,
+				90873B4C25037B18002D1468 /* SPBaseViewController.m */,
+				90873B26250370D5002D1468 /* AppDelegate.h */,
+				90873B27250370D6002D1468 /* AppDelegate.m */,
+				90873B29250370D6002D1468 /* SceneDelegate.h */,
+				90873B2A250370D6002D1468 /* SceneDelegate.m */,
+				90873B4625037AB6002D1468 /* SlidePhoto-Bridging-Header.h */,
+				90873B2F250370D6002D1468 /* Main.storyboard */,
+				90873B32250370DB002D1468 /* Assets.xcassets */,
+				90873B34250370DB002D1468 /* LaunchScreen.storyboard */,
+				90873B37250370DB002D1468 /* Info.plist */,
+				90873B38250370DB002D1468 /* main.m */,
+			);
+			path = SlidePhoto;
+			sourceTree = "<group>";
+		};
+		90873B3F250370E8002D1468 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90873B51250384CC002D1468 /* SPHttpManager.h */,
+				90873B52250384CC002D1468 /* SPHttpManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90873B40250370EE002D1468 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90493145250488AF0079ADB6 /* ImageDownloader */,
+				90873B4E25037E73002D1468 /* Category */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		90873B41250370F8002D1468 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				90873B4525037153002D1468 /* Models */,
+				90873B442503714F002D1468 /* Views */,
+				90873B432503714A002D1468 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		90873B432503714A002D1468 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90493143250475DE0079ADB6 /* SPMainCardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		90873B442503714F002D1468 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90873B4725037AB6002D1468 /* SPSlidePhotoItemView.swift */,
+				90493140250471D60079ADB6 /* SPSlidePhotoViewer.h */,
+				90493141250471D60079ADB6 /* SPSlidePhotoViewer.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90873B4525037153002D1468 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90873B5425038985002D1468 /* SPImageCardDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90873B4E25037E73002D1468 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				90873B4F25037E89002D1468 /* UIColor+Ext.swift */,
+				90873B5625038DE5002D1468 /* NSString+Extension.h */,
+				90873B5725038DE5002D1468 /* NSString+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9EAD4B2BC79DEEE7A9881895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1396BD646049CCEDA4ABFA98 /* Pods-SlidePhoto.debug.xcconfig */,
+				239291D07C37D63BACD97884 /* Pods-SlidePhoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC12F5F56C551095985D1E19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1542E1337B9696ABC65D0B8 /* Pods_SlidePhoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90873B22250370D5002D1468 /* SlidePhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90873B3C250370DB002D1468 /* Build configuration list for PBXNativeTarget "SlidePhoto" */;
+			buildPhases = (
+				1AB4259F8B422B9BC65F621F /* [CP] Check Pods Manifest.lock */,
+				90873B1F250370D5002D1468 /* Sources */,
+				90873B20250370D5002D1468 /* Frameworks */,
+				90873B21250370D5002D1468 /* Resources */,
+				5EBDB3A8E11E707682C97F45 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlidePhoto;
+			productName = SlidePhoto;
+			productReference = 90873B23250370D5002D1468 /* SlidePhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90873B1B250370D5002D1468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = VictorZhang;
+				TargetAttributes = {
+					90873B22250370D5002D1468 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+				};
+			};
+			buildConfigurationList = 90873B1E250370D5002D1468 /* Build configuration list for PBXProject "SlidePhoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90873B1A250370D5002D1468;
+			productRefGroup = 90873B24250370D5002D1468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90873B22250370D5002D1468 /* SlidePhoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90873B21250370D5002D1468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90873B36250370DB002D1468 /* LaunchScreen.storyboard in Resources */,
+				90873B33250370DB002D1468 /* Assets.xcassets in Resources */,
+				90873B31250370D6002D1468 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB4259F8B422B9BC65F621F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlidePhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EBDB3A8E11E707682C97F45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlidePhoto/Pods-SlidePhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlidePhoto/Pods-SlidePhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlidePhoto/Pods-SlidePhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90873B1F250370D5002D1468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90873B53250384CC002D1468 /* SPHttpManager.m in Sources */,
+				9049314B2504893B0079ADB6 /* UIImageView+DownloadCache.m in Sources */,
+				90873B5825038DE5002D1468 /* NSString+Extension.m in Sources */,
+				90873B4D25037B18002D1468 /* SPBaseViewController.m in Sources */,
+				90873B5525038985002D1468 /* SPImageCardDataModel.swift in Sources */,
+				90873B4825037AB6002D1468 /* SPSlidePhotoItemView.swift in Sources */,
+				90873B28250370D6002D1468 /* AppDelegate.m in Sources */,
+				90873B39250370DB002D1468 /* main.m in Sources */,
+				90493142250471D60079ADB6 /* SPSlidePhotoViewer.m in Sources */,
+				90873B2B250370D6002D1468 /* SceneDelegate.m in Sources */,
+				90493148250488CB0079ADB6 /* SPImageDownloader.m in Sources */,
+				90493144250475DE0079ADB6 /* SPMainCardViewController.swift in Sources */,
+				90873B5025037E89002D1468 /* UIColor+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90873B2F250370D6002D1468 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90873B30250370D6002D1468 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90873B34250370DB002D1468 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90873B35250370DB002D1468 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90873B3A250370DB002D1468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90873B3B250370DB002D1468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90873B3D250370DB002D1468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1396BD646049CCEDA4ABFA98 /* Pods-SlidePhoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZRWDD967G;
+				INFOPLIST_FILE = SlidePhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiangzhang.SlidePhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlidePhoto/SlidePhoto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90873B3E250370DB002D1468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239291D07C37D63BACD97884 /* Pods-SlidePhoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZRWDD967G;
+				INFOPLIST_FILE = SlidePhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiangzhang.SlidePhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlidePhoto/SlidePhoto-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90873B1E250370D5002D1468 /* Build configuration list for PBXProject "SlidePhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90873B3A250370DB002D1468 /* Debug */,
+				90873B3B250370DB002D1468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90873B3C250370DB002D1468 /* Build configuration list for PBXNativeTarget "SlidePhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90873B3D250370DB002D1468 /* Debug */,
+				90873B3E250370DB002D1468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90873B1B250370D5002D1468 /* Project object */;
+}

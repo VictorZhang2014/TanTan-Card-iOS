@@ -1,0 +1,26 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - SDWebImage (5.8.3):
+    - SDWebImage/Core (= 5.8.3)
+  - SDWebImage/Core (5.8.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - HandyJSON
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: cd50d878e17b05615ae0d6f37393528c0e2ccdc3
+
+COCOAPODS: 1.9.3
